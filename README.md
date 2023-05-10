@@ -20,7 +20,6 @@ Here are some ideas to get you started:
 
 
 ## Tech Stack
-## Tech Stack
 
 ### Front-end
 ![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square&logo=html5&logoColor=white)
