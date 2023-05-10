@@ -31,7 +31,6 @@ Here are some ideas to get you started:
 
 ### Back-end
 ![Node.js](https://img.shields.io/badge/-Node.js-green?style=flat-square&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=Express&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square&logo=typescript&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-blue?style=flat-square&logo=mysql&logoColor=white)
 ![Nginx](https://img.shields.io/badge/-Nginx-green?style=flat-square&logo=nginx&logoColor=white)
@@ -41,6 +40,5 @@ Here are some ideas to get you started:
 
 
 ### Other Tools
-![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-grey?style=flat-square&logo=github&logoColor=white)
 ![Nginx](https://img.shields.io/badge/-Nginx-green?style=flat-square&logo=nginx&logoColor=white)
