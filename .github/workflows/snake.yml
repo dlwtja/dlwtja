@@ -25,8 +25,9 @@ jobs:
         with:
           github_user_name: dlwtja  # 자신의 GitHub 사용자 이름으로 변경하세요
           outputs: |
-            dist/github-contribution-grid-snake.svg  # 일반 모드
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark  # 다크 모드
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
 
       # <build_dir>의 내용을 target 브랜치에 푸시
       # 콘텐츠는 https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> 에서 확인 가능
