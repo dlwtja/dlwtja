@@ -1,41 +1,39 @@
 name: generate animation
 
 on:
-  # run automatically every 24 hours
+  # 매일 24시간마다 실행
   schedule:
-    - cron: "0 */24 * * *" 
+    - cron: "0 */24 * * *"
   
-  # allows to manually run the job at any time
+  # 수동으로 작업을 실행할 수 있도록 설정
   workflow_dispatch:
   
-  # run on every push on the master branch
+  # master 브랜치에 push가 일어날 때마다 실행
   push:
     branches:
-    - master
-    
-  
+      - master
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      # GitHub 사용자(<github_user_name>)의 기여 그래프에서 스네이크 게임을 생성하고, svg 애니메이션을 <svg_out_path>에 출력
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: dlwtja
+          github_user_name: dlwtja  # 자신의 GitHub 사용자 이름으로 변경하세요
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg  # 일반 모드
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark  # 다크 모드
 
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      # <build_dir>의 내용을 target 브랜치에 푸시
+      # 콘텐츠는 https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> 에서 확인 가능
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
+          target_branch: output  # output 브랜치에 푸시
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # GitHub Personal Access Token 설정
