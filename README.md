@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 ![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=hello%20stranger&fontSize=90)
 
 
-![Snake animation dark](https://github.com/dlwtja/dlwtja/blob/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
+![Snake animation dark](https://github.com/dlwtja/dlwtja/blob/output/github-contribution-grid-snake-dark.svg)
 
 
 
